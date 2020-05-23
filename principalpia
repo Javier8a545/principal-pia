@@ -91,3 +91,63 @@ el más:
     (Contactos[indice_obtenido]. telefono)
     (Contactos[indice_obtenido]. nombre)
     (Contactos[indice_obtenido]. correo)
+    
+    
+    
+    Módulo para poder ejecutar tareas directas en el sistema operativo.
+importación os
+Módulo para trabajar con expresione regulares
+importación re
+
+Se establece una función para borrar pantalla.
+• Se usa, lambda expresión, que es suabisód:
+• def clear():
+• os.system('cls')
+LimpiarPantalla á lambda: os. ('cls' ) #on sistema Windows
+
+• El Serr de expresiones regulares
+_txt es el texto a vlidar.
+• _regex es el patrón de expresión regular a validar.
+Retorna True si _txt cumple con el patrón en definido _regex
+Retrona False si no es así.
+def RegEx(_txt,_regex):
+    coincidenciaáre. partido(_regex, _txt)
+    devolver bool(coincidencia)
+
+def principal():
+    mientras que (Verdadero):
+        LimpiarPantalla()
+        impresión("LISTA DE COTACTOS")
+        Impresión(" ")
+        impresión("[1] Agregar un contacto.")
+        impresión("[2] Buscar un contacto.")
+        impresión("[3] Eliminar un contacto.")
+        impresión("[4] Contactos Mostrar.")
+        impresión("[5] Datos serializadores.")
+        impresión("[0] Salir.")
+        opcion_elegida de entrada de la entrada ("¿Qué deseahacer? > ")
+        si RegEx(opcion_elegida,"[123450]{1}$"):
+            si opcion_elegida"0":
+                impresión("GRACIAS POR UTILIZAR EL PROGRAMA")
+                Romper
+            si opcion_elegida"1":
+                impresión("Llamar procedimiento para la acción")
+            si opcion_elegida"2":
+                impresión("Llamar procedimiento para la acción")
+            si opcion_elegida"3":
+                impresión("Llamar procedimiento para la acción")
+            si opcion_elegida"4":
+                impresión("Llamar procedimiento para la acción")
+            si opcion_elegida"5":
+                impresión("Llamar procedimiento para la acción")
+
+            entrada("Pulsa enter para contunuar...")
+        el más:
+            impresión("Esa respuesta no es válida.")
+            entrada("Pulsa enter para contunuar...")
+
+principal()
+
+Se que codificar un procedimiento adecuado, en cada una de
+• Las opciones válidas.
+© 2020 GitHub, Inc.

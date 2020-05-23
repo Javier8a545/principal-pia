@@ -1,0 +1,93 @@
+• Almacena objetos en una lista, y las muestras de diferentes maneras.
+
+Se pide importar la clase Contacto, que está definida en definirclase.py
+de la importación definirlas Contacto
+• Se importa una clase que permite que se apoderen de un objeto
+del operador import attrgetter
+
+• Función para mostrar los elementos que tiene la lisa de ejemplo.
+def CuantosElementosHay():
+    txt á "El número de elementos de la colección es"
+    imprimir(txt. formato(len(Contactos)))
+
+def BuscarTelefono(telabuscar):
+    coincidencia-Falso
+    para contactos en Contactos:
+        si (contacto. telefonotelabuscar):
+            coincidencia-Verdadero
+            Romper
+    retorno coincidencia
+
+def BuscarContacto(telabuscar):
+    contador-1
+    indice_retorno-1
+    para contactos en Contactos:
+        contador+o1
+        si (contacto. telefonotelabuscar):
+            indice_retornode contador
+            Romper
+    volver indice_retorno
+
+Se declara una lista que objetos. Inicia elementos de pecado.
+Muestra los elementos de la lista.
+Contactos = []
+CuantosElementosHay()
+
+Se agregan varios objetos a la lista.
+Contactos. anexar(1234567890,"Felipe Ramírez","feli.rmz@hotmail.com"))
+CuantosElementosHay()
+
+Se agregan más elementos a la lista.
+Contactos. anexar(1134567890,"Franco Leal","feleal@hotmail.com" ))
+Contactos. anexar(1114567890,"María Medeiros","mmedeiros@hotmail.com"))
+Contactos. anexar(1111567890,"Olga Guerrero","guerroolga@gmail.com" ))
+CuantosElementosHay()
+
+• Barrido de Código.
+para contactos en Contactos:
+    Impresión("------------------------------------------")
+    impresión(contacto. telefono)
+    impresión(contacto. nombre)
+    impresión(contacto. correo)
+    impresión(contacto. registro)
+    impresión(contacto. UIValido)
+
+• Ordenamiento.
+Contactos. ordenar(clave-attrgetter("telefono"),invertir-Falso)
+
+impresión("Ordenado")
+• Barrido de Código.
+para contactos en Contactos:
+    Impresión("------------------------------------------")
+    impresión(contacto. telefono)
+    impresión(contacto. nombre)
+    impresión(contacto. correo)
+    impresión(contacto. registro)
+    impresión(contacto. UIValido)
+
+Búsqueda de elementos, usando la función de búsqueda.
+Retorna falso o verdadero, dependendiendo su se encontró
+No, no.
+impresión(BuscarTelefono(1234567890))
+impresión(BuscarTelefono(9999999999))
+
+Búsqueda de objeto y retorno índice de, usando función de
+Búsqueda.
+impresión(BuscarContacto(1234567890))
+impresión(BuscarContacto(9999999999))
+Uso del índice recuperado
+indice_obtenidoDeBuscarContacto(1234567890)
+si indice_obtenido-1:
+    impresión("No se encontró el objeto")
+el más:
+    (Contactos[indice_obtenido]. telefono)
+    (Contactos[indice_obtenido]. nombre)
+    (Contactos[indice_obtenido]. correo)
+
+indice_obtenidoDeCorreoS,BuscarContacto(9999999999)
+si indice_obtenido-1:
+    impresión("No se encontró el objeto")
+el más:
+    (Contactos[indice_obtenido]. telefono)
+    (Contactos[indice_obtenido]. nombre)
+    (Contactos[indice_obtenido]. correo)
